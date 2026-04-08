@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  /* ─── Dark theme (default) ────────────────────────────────── */
+  :root {
+    --acid:       #C3D809;
+    --acid-rgb:   195, 216, 9;
+    --acid-fg:    #111011;
+    --dark:       #222022;
+    --dark-rgb:   34, 32, 34;
+    --darker:     #111011;
+    --darker-rgb: 17, 16, 17;
+    --darkest:    #0a0a0a;
+    --darkest-rgb:10, 10, 10;
+    --white:      #F5F5F0;
+    --white-rgb:  245, 245, 240;
+    --gray:       #888;
+    --card-bg:    #2a282a;
+    --card-bg-rgb:42, 40, 42;
+    --card-bg-2:  #0c0b0c;
+    --preloader-bar-track: #333;
+
+    /* Footer / legacy compat */
+    --bg-primary:    #111011;
+    --bg-surface:    #1c2028;
+    --accent-cyan:   #C3D809;
+    --accent-orange: #C3D809;
+    --text-primary:  #F5F5F0;
+    --text-muted:    #94a3b8;
+    --border:        #2e3440;
+  }
+
+  /* ─── Light theme ─────────────────────────────────────────── */
+  [data-theme="light"] {
+    --acid:       #CD0000;
+    --acid-rgb:   205, 0, 0;
+    --acid-fg:    #FFFFFF;
+    --dark:       #EFEDE6;
+    --dark-rgb:   239, 237, 230;
+    --darker:     #E2E0D9;
+    --darker-rgb: 226, 224, 217;
+    --darkest:    #D8D6CF;
+    --darkest-rgb:216, 214, 207;
+    --white:      #1a1a1a;
+    --white-rgb:  26, 26, 26;
+    --gray:       #666;
+    --card-bg:    #F5F3EC;
+    --card-bg-rgb:245, 243, 236;
+    --card-bg-2:  #E8E6DF;
+    --preloader-bar-track: #ccc;
+
+    /* Footer / legacy compat */
+    --bg-primary:    #EFEDE6;
+    --bg-surface:    #F5F3EC;
+    --accent-cyan:   #CD0000;
+    --accent-orange: #CD0000;
+    --text-primary:  #1a1a1a;
+    --text-muted:    #666;
+    --border:        #d5d3cc;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--dark);
+    color: var(--white);
+    font-family: 'Outfit', sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+  }
+}
