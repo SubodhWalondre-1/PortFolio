@@ -46,7 +46,7 @@ export const certifications = [
   {
     id:       8,
     name:     "Artificial Intelligence and Machine Learning Workshop",
-    org:      "KodeKloud",
+    org:      "Vinsys IT Services",
     category: "workshop",
   },
 ];
